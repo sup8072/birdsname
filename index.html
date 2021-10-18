@@ -23,36 +23,6 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light nav-distance">
-            <a class="navbar-brand" href="#">새 이름 찾기</a>
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"
-                            >Disabled</a
-                        >
-                    </li>
-                </ul>
-            </div>
         </nav>
         <section class="section">
             <h1 class="title">머신러닝을 이용한 새 이름 찾기</h1>
@@ -92,7 +62,7 @@
                 <div class="addthis_inline_share_toolbox"></div>
             
                 <div class="image-title-wrap">
-                    <button type="button" onclick="removeUpload()" class="remove-image">
+                    <button type="button" class="remove-image" onclick="gaReload();">
                         다른 사진으로 재시도
                     </button>
                 </div>
@@ -118,6 +88,11 @@
                 s.setAttribute('data-timestamp', +new Date());
                 (d.head || d.body).appendChild(s);
             })();
+        </script>
+        <script>
+            function gaReload(){
+                window.location.reload();
+            }
         </script>
         <noscript
             >Please enable JavaScript to view the
